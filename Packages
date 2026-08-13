@@ -1,17 +1,17 @@
-Package: com.dao.appsyncunified
-Version: 116.0
-Architecture: iphoneos-arm64e
-Maintainer: Karen/あけみ <karen@akemi.ai>
-Installed-Size: 508
-Depends: firmware (>= 15.0), mobilesubstrate (>= 0.9.5100), firmware (<= 18.2)
 Conflicts: ai.akemi.appsyncunified
-Filename: ./com.dao.appsyncunified_116.0_iphoneos-arm64e.deb
+Depends: firmware (>= 15.0), mobilesubstrate (>= 0.9.5100), firmware (<= 18.2)
+Maintainer: Karen/あけみ <karen@akemi.ai>
+Package: com.dao.appsyncunified
+Name: AppSyncUnified(RootHide)
+Description: AppSync Unified 是一款插件，允许用户在其 iOS 设备上自由安装临时签名、伪签名、未签名或过期的 IPA 应用包。
+Section: 嗨-系统
+Author: Karen/あけみ, Linus Yang <karen@akemi.ai>
+Architecture: iphoneos-arm64e
+Version: 116.0
+Installed-Size: 508
+Filename: ./debs/com.dao.appsyncunified_116.0_iphoneos-arm64e.deb
 Size: 30542
 MD5sum: 9a43d27be11b42735759a1665e516545
 SHA1: 8d93cc37b3df7dfc299275a0a93ee1c292f5b466
 SHA256: f0148bba5280576b49e5b79ec2d6cc2cc8cb679564ef92136b737ca00a5d4a2d
-Section: 嗨-系统
-Description: AppSync Unified 是一款插件，允许用户在其 iOS 设备上自由安装临时签名、伪签名、未签名或过期的 IPA 应用包。
-Author: Karen/あけみ, Linus Yang <karen@akemi.ai>
-Name: AppSyncUnified(RootHide)
 
