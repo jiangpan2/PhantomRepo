@@ -12,9 +12,9 @@ Size: 256789
 MD5sum: a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6
 SHA1: a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0
 SHA256: a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2
-Depiction: https://phantomrepo.github.io/depictions/phantomstatusbar.html
-SileoDepiction: https://phantomrepo.github.io/depictions/phantomstatusbar.json
-Icon: https://phantomrepo.github.io/assets/icon_statusbar.png
+Depiction: https://jiangpan2.github.io/PhantomRepo/depictions/phantomstatusbar.html
+SileoDepiction: https://jiangpan2.github.io/PhantomRepo/depictions/phantomstatusbar.json
+Icon: https://jiangpan2.github.io/PhantomRepo/assets/icon_statusbar.png
 Tag: cydia::commercial, compatible_min::ios14.0
 
 Package: com.phantom.ccenhancer
@@ -31,9 +31,9 @@ Size: 312456
 MD5sum: b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7
 SHA1: b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1
 SHA256: b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3
-Depiction: https://phantomrepo.github.io/depictions/ccenhancer.html
-SileoDepiction: https://phantomrepo.github.io/depictions/ccenhancer.json
-Icon: https://phantomrepo.github.io/assets/icon_cc.png
+Depiction: https://jiangpan2.github.io/PhantomRepo/depictions/ccenhancer.html
+SileoDepiction: https://jiangpan2.github.io/PhantomRepo/depictions/ccenhancer.json
+Icon: https://jiangpan2.github.io/PhantomRepo/assets/icon_cc.png
 Tag: cydia::commercial, compatible_min::ios14.0
 
 Package: com.phantom.notificationpro
@@ -50,9 +50,9 @@ Size: 456789
 MD5sum: c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8
 SHA1: c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2
 SHA256: c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3h4
-Depiction: https://phantomrepo.github.io/depictions/notificationpro.html
-SileoDepiction: https://phantomrepo.github.io/depictions/notificationpro.json
-Icon: https://phantomrepo.github.io/assets/icon_notification.png
+Depiction: https://jiangpan2.github.io/PhantomRepo/depictions/notificationpro.html
+SileoDepiction: https://jiangpan2.github.io/PhantomRepo/depictions/notificationpro.json
+Icon: https://jiangpan2.github.io/PhantomRepo/assets/icon_notification.png
 Tag: cydia::commercial, compatible_min::ios15.0
 
 Package: com.phantom.applockpro
@@ -69,9 +69,9 @@ Size: 198765
 MD5sum: d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9
 SHA1: d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3
 SHA256: d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3h4i5
-Depiction: https://phantomrepo.github.io/depictions/applockpro.html
-SileoDepiction: https://phantomrepo.github.io/depictions/applockpro.json
-Icon: https://phantomrepo.github.io/assets/icon_lock.png
+Depiction: https://jiangpan2.github.io/PhantomRepo/depictions/applockpro.html
+SileoDepiction: https://jiangpan2.github.io/PhantomRepo/depictions/applockpro.json
+Icon: https://jiangpan2.github.io/PhantomRepo/assets/icon_lock.png
 Tag: cydia::commercial, compatible_min::ios14.0
 
 Package: com.phantom.folderenhancer
@@ -88,9 +88,9 @@ Size: 145678
 MD5sum: e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0
 SHA1: e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4
 SHA256: e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3h4i5j6
-Depiction: https://phantomrepo.github.io/depictions/folderenhancer.html
-SileoDepiction: https://phantomrepo.github.io/depictions/folderenhancer.json
-Icon: https://phantomrepo.github.io/assets/icon_folder.png
+Depiction: https://jiangpan2.github.io/PhantomRepo/depictions/folderenhancer.html
+SileoDepiction: https://jiangpan2.github.io/PhantomRepo/depictions/folderenhancer.json
+Icon: https://jiangpan2.github.io/PhantomRepo/assets/icon_folder.png
 Tag: cydia::commercial, compatible_min::ios14.0
 
 Package: com.phantom.gesturenav
@@ -107,8 +107,8 @@ Size: 223456
 MD5sum: f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1
 SHA1: f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5
 SHA256: f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3h4i5j6k7
-Depiction: https://phantomrepo.github.io/depictions/gesturenav.html
-SileoDepiction: https://phantomrepo.github.io/depictions/gesturenav.json
-Icon: https://phantomrepo.github.io/assets/icon_gesture.png
+Depiction: https://jiangpan2.github.io/PhantomRepo/depictions/gesturenav.html
+SileoDepiction: https://jiangpan2.github.io/PhantomRepo/depictions/gesturenav.json
+Icon: https://jiangpan2.github.io/PhantomRepo/assets/icon_gesture.png
 Tag: cydia::commercial, compatible_min::ios15.0
 
