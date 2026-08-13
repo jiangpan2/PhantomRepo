@@ -1,0 +1,114 @@
+Package: com.phantom.phantomstatusbar
+Name: 幻影状态栏
+Version: 2.3.1
+Architecture: iphoneos-arm64
+Description: 状态栏全面美化，支持自定义图标、颜色、动画效果
+Maintainer: PhantomTeam <admin@phantomrepo.com>
+Author: PhantomTeam
+Section: System
+Depends: mobilesubstrate, preferenceloader
+Filename: ./debs/com.phantom.phantomstatusbar_2.3.1_iphoneos-arm64.deb
+Size: 256789
+MD5sum: a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6
+SHA1: a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0
+SHA256: a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2
+Depiction: https://phantomrepo.github.io/depictions/phantomstatusbar.html
+SileoDepiction: https://phantomrepo.github.io/depictions/phantomstatusbar.json
+Icon: https://phantomrepo.github.io/assets/icon_statusbar.png
+Tag: cydia::commercial, compatible_min::ios14.0
+
+Package: com.phantom.ccenhancer
+Name: 控制中心增强
+Version: 1.8.0
+Architecture: iphoneos-arm64
+Description: 新增20+快捷开关，支持自定义布局和排序
+Maintainer: PhantomTeam <admin@phantomrepo.com>
+Author: DevTeam
+Section: System
+Depends: mobilesubstrate, preferenceloader
+Filename: ./debs/com.phantom.ccenhancer_1.8.0_iphoneos-arm64.deb
+Size: 312456
+MD5sum: b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7
+SHA1: b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1
+SHA256: b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3
+Depiction: https://phantomrepo.github.io/depictions/ccenhancer.html
+SileoDepiction: https://phantomrepo.github.io/depictions/ccenhancer.json
+Icon: https://phantomrepo.github.io/assets/icon_cc.png
+Tag: cydia::commercial, compatible_min::ios14.0
+
+Package: com.phantom.notificationpro
+Name: 通知中心重构
+Version: 3.0.2
+Architecture: iphoneos-arm64
+Description: 卡片式通知设计，支持主题切换和自定义样式
+Maintainer: PhantomTeam <admin@phantomrepo.com>
+Author: UIWizard
+Section: UI
+Depends: mobilesubstrate, preferenceloader
+Filename: ./debs/com.phantom.notificationpro_3.0.2_iphoneos-arm64.deb
+Size: 456789
+MD5sum: c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8
+SHA1: c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2
+SHA256: c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3h4
+Depiction: https://phantomrepo.github.io/depictions/notificationpro.html
+SileoDepiction: https://phantomrepo.github.io/depictions/notificationpro.json
+Icon: https://phantomrepo.github.io/assets/icon_notification.png
+Tag: cydia::commercial, compatible_min::ios15.0
+
+Package: com.phantom.applockpro
+Name: 应用锁Pro
+Version: 2.1.0
+Architecture: iphoneos-arm64
+Description: 指纹/面容锁应用，支持伪装图标和假密码模式
+Maintainer: PhantomTeam <admin@phantomrepo.com>
+Author: SecurityLab
+Section: Security
+Depends: mobilesubstrate, preferenceloader, libactivator
+Filename: ./debs/com.phantom.applockpro_2.1.0_iphoneos-arm64.deb
+Size: 198765
+MD5sum: d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9
+SHA1: d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3
+SHA256: d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3h4i5
+Depiction: https://phantomrepo.github.io/depictions/applockpro.html
+SileoDepiction: https://phantomrepo.github.io/depictions/applockpro.json
+Icon: https://phantomrepo.github.io/assets/icon_lock.png
+Tag: cydia::commercial, compatible_min::ios14.0
+
+Package: com.phantom.folderenhancer
+Name: 文件夹增强
+Version: 1.5.3
+Architecture: iphoneos-arm64
+Description: 无限文件夹嵌套，支持自定义外观和背景
+Maintainer: PhantomTeam <admin@phantomrepo.com>
+Author: TweakDev
+Section: UI
+Depends: mobilesubstrate, preferenceloader
+Filename: ./debs/com.phantom.folderenhancer_1.5.3_iphoneos-arm64.deb
+Size: 145678
+MD5sum: e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0
+SHA1: e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4
+SHA256: e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3h4i5j6
+Depiction: https://phantomrepo.github.io/depictions/folderenhancer.html
+SileoDepiction: https://phantomrepo.github.io/depictions/folderenhancer.json
+Icon: https://phantomrepo.github.io/assets/icon_folder.png
+Tag: cydia::commercial, compatible_min::ios14.0
+
+Package: com.phantom.gesturenav
+Name: 手势导航
+Version: 2.0.1
+Architecture: iphoneos-arm64
+Description: 全面屏手势操作，支持自定义手势和快捷动作
+Maintainer: PhantomTeam <admin@phantomrepo.com>
+Author: GestureTeam
+Section: System
+Depends: mobilesubstrate, preferenceloader, libactivator
+Filename: ./debs/com.phantom.gesturenav_2.0.1_iphoneos-arm64.deb
+Size: 223456
+MD5sum: f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1
+SHA1: f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5
+SHA256: f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3h4i5j6k7
+Depiction: https://phantomrepo.github.io/depictions/gesturenav.html
+SileoDepiction: https://phantomrepo.github.io/depictions/gesturenav.json
+Icon: https://phantomrepo.github.io/assets/icon_gesture.png
+Tag: cydia::commercial, compatible_min::ios15.0
+

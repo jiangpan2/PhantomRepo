@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幻影状态栏 - PhantomRepo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #121212;
+            color: #fff;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #333;
+        }
+        .icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 18px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+        .info h1 { font-size: 22px; margin-bottom: 5px; }
+        .info .subtitle { color: #888; font-size: 14px; margin-bottom: 8px; }
+        .info .meta { font-size: 13px; color: #666; }
+        .section {
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 18px;
+            margin-bottom: 15px;
+        }
+        .section h2 {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: #667eea;
+        }
+        .section p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .features {
+            list-style: none;
+        }
+        .features li {
+            padding: 8px 0;
+            font-size: 14px;
+            color: #ccc;
+            border-bottom: 1px solid #2a2a2a;
+        }
+        .features li:last-child { border-bottom: none; }
+        .features li::before {
+            content: "✓ ";
+            color: #4ade80;
+            font-weight: bold;
+        }
+        .screenshots {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+        .screenshot {
+            min-width: 200px;
+            height: 400px;
+            background: linear-gradient(180deg, #1a1a2e, #16213e);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .screenshot .bar {
+            width: 100%;
+            height: 40px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 12px 12px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px;
+            font-size: 12px;
+        }
+        .screenshot .body {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 12px;
+        }
+        .changelog {
+            list-style: none;
+        }
+        .changelog li {
+            padding: 10px 0;
+            border-bottom: 1px solid #2a2a2a;
+        }
+        .changelog li:last-child { border-bottom: none; }
+        .version {
+            font-size: 14px;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+        .changes {
+            font-size: 13px;
+            color: #999;
+            line-height: 1.5;
+        }
+        .compat {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .compat-tag {
+            background: #2a2a2a;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            color: #aaa;
+        }
+        .compat-tag.supported {
+            background: rgba(74, 222, 128, 0.15);
+            color: #4ade80;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="icon">📱</div>
+        <div class="info">
+            <h1>幻影状态栏</h1>
+            <div class="subtitle">状态栏全面美化插件</div>
+            <div class="meta">版本 2.3.1 · PhantomTeam</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>插件描述</h2>
+        <p>幻影状态栏是一款功能强大的状态栏美化插件，支持自定义图标样式、颜色、动画效果，让你的状态栏与众不同。兼容 iOS 14.0 - 16.5，支持所有刘海屏和灵动岛设备。</p>
+    </div>
+
+    <div class="section">
+        <h2>主要功能</h2>
+        <ul class="features">
+            <li>自定义状态栏图标样式（10+主题）</li>
+            <li>状态栏颜色渐变与透明度调节</li>
+            <li>电量百分比数字显示</li>
+            <li>信号/WiFi 图标自定义</li>
+            <li>状态栏动画效果（呼吸、闪烁等）</li>
+            <li>灵动岛区域自定义</li>
+            <li>支持横竖屏切换</li>
+            <li>独立设置面板，即开即用</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>截图预览</h2>
+        <div class="screenshots">
+            <div class="screenshot">
+                <div class="bar">
+                    <span>📶 📡 100%</span>
+                    <span>9:41</span>
+                </div>
+                <div class="body">渐变主题</div>
+            </div>
+            <div class="screenshot">
+                <div class="bar" style="background: linear-gradient(90deg, #f093fb, #f5576c);">
+                    <span>📶 📡 85%</span>
+                    <span>9:41</span>
+                </div>
+                <div class="body">粉色主题</div>
+            </div>
+            <div class="screenshot">
+                <div class="bar" style="background: linear-gradient(90deg, #4facfe, #00f2fe);">
+                    <span>📶 📡 72%</span>
+                    <span>9:41</span>
+                </div>
+                <div class="body">青色主题</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>更新日志</h2>
+        <ul class="changelog">
+            <li>
+                <div class="version">v2.3.1</div>
+                <div class="changes">
+                    • 修复 iOS 16.5 兼容性问题<br>
+                    • 新增 3 款状态栏主题<br>
+                    • 优化灵动岛显示效果<br>
+                    • 修复部分设备闪退问题
+                </div>
+            </li>
+            <li>
+                <div class="version">v2.3.0</div>
+                <div class="changes">
+                    • 支持灵动岛自定义<br>
+                    • 新增动画效果选项<br>
+                    • 性能优化，更省电
+                </div>
+            </li>
+            <li>
+                <div class="version">v2.2.0</div>
+                <div class="changes">
+                    • 新增 5 款图标主题<br>
+                    • 支持颜色渐变调节<br>
+                    • 修复已知 bug
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>兼容信息</h2>
+        <div class="compat">
+            <span class="compat-tag supported">iOS 14.x</span>
+            <span class="compat-tag supported">iOS 15.x</span>
+            <span class="compat-tag supported">iOS 16.x</span>
+            <span class="compat-tag">arm64</span>
+            <span class="compat-tag">arm64e</span>
+            <span class="compat-tag">iPhone</span>
+            <span class="compat-tag">iPad</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>依赖信息</h2>
+        <p style="font-size: 13px; color: #999;">
+            mobilesubstrate<br>
+            preferenceloader
+        </p>
+    </div>
+</body>
+</html>

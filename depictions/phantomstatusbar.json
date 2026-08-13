@@ -1,0 +1,57 @@
+{
+    "name": "幻影状态栏",
+    "version": "2.3.1",
+    "author": "PhantomTeam",
+    "maintainer": "PhantomTeam <admin@phantomrepo.com>",
+    "section": "System",
+    "compatibility": {
+        "firmware": [
+            {
+                "name": "iOS 14",
+                "status": "supported"
+            },
+            {
+                "name": "iOS 15",
+                "status": "supported"
+            },
+            {
+                "name": "iOS 16",
+                "status": "supported"
+            }
+        ]
+    },
+    "screenshots": [
+        {
+            "url": "https://phantomrepo.github.io/assets/screenshot1.png",
+            "accessibilityText": "渐变主题状态栏"
+        },
+        {
+            "url": "https://phantomrepo.github.io/assets/screenshot2.png",
+            "accessibilityText": "粉色主题状态栏"
+        },
+        {
+            "url": "https://phantomrepo.github.io/assets/screenshot3.png",
+            "accessibilityText": "青色主题状态栏"
+        }
+    ],
+    "views": [
+        {
+            "class": "DepictionMarkdownView",
+            "markdown": "幻影状态栏是一款功能强大的状态栏美化插件，支持自定义图标样式、颜色、动画效果，让你的状态栏与众不同。\n\n兼容 iOS 14.0 - 16.5，支持所有刘海屏和灵动岛设备。"
+        },
+        {
+            "class": "DepictionTableTextView",
+            "title": "主要功能",
+            "text": "• 自定义状态栏图标样式（10+主题）\n• 状态栏颜色渐变与透明度调节\n• 电量百分比数字显示\n• 信号/WiFi 图标自定义\n• 状态栏动画效果（呼吸、闪烁等）\n• 灵动岛区域自定义\n• 支持横竖屏切换\n• 独立设置面板，即开即用"
+        },
+        {
+            "class": "DepictionMarkdownView",
+            "markdown": "## 更新日志\n\n### v2.3.1\n- 修复 iOS 16.5 兼容性问题\n- 新增 3 款状态栏主题\n- 优化灵动岛显示效果\n- 修复部分设备闪退问题\n\n### v2.3.0\n- 支持灵动岛自定义\n- 新增动画效果选项\n- 性能优化，更省电\n\n### v2.2.0\n- 新增 5 款图标主题\n- 支持颜色渐变调节\n- 修复已知 bug"
+        },
+        {
+            "class": "DepictionTableTextView",
+            "title": "依赖",
+            "text": "mobilesubstrate\npreferenceloader"
+        }
+    ]
+}

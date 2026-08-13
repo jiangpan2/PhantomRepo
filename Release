@@ -1,0 +1,10 @@
+Origin: PhantomRepo
+Label: PhantomRepo 幻影源
+Suite: stable
+Version: 1.0
+Codename: phantom
+Architectures: iphoneos-arm64 iphoneos-arm64e
+Components: main
+Description: 精选优质越狱插件，专注系统优化与界面美化
+Icon: https://phantomrepo.github.io/CydiaIcon.png
+Depiction: https://phantomrepo.github.io/depictions/
