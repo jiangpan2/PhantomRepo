@@ -25,28 +25,30 @@ jobs:
 
       - name: 生成 Packages 索引
         run: |
+          set +e
           > Packages
           count=0
           skipped=0
           
-          for deb in debs/*.deb debs/**/*.deb; do
+          # 查找所有deb文件
+          find debs -name "*.deb" -type f | sort | while read -r deb; do
             [ -f "$deb" ] || continue
             
             # 提取control信息
-            control=$(dpkg-deb -I "$deb" control 2>/dev/null)
-            if [ $? -ne 0 ] || [ -z "$control" ]; then
+            control=$(dpkg-deb -I "$deb" control 2>&1)
+            if [ $? -ne 0 ] || [ -z "$control" ] || echo "$control" | grep -q "error"; then
               echo "⚠️  跳过损坏的包: $deb"
               skipped=$((skipped + 1))
               continue
             fi
             
             # 获取文件大小
-            size=$(stat -c%s "$deb" 2>/dev/null || stat -f%z "$deb" 2>/dev/null)
+            size=$(stat -c%s "$deb" 2>/dev/null || echo "0")
             
             # 计算MD5和SHA
-            md5=$(md5sum "$deb" | cut -d' ' -f1)
-            sha1=$(sha1sum "$deb" | cut -d' ' -f1)
-            sha256=$(sha256sum "$deb" | cut -d' ' -f1)
+            md5=$(md5sum "$deb" 2>/dev/null | cut -d' ' -f1)
+            sha1=$(sha1sum "$deb" 2>/dev/null | cut -d' ' -f1)
+            sha256=$(sha256sum "$deb" 2>/dev/null | cut -d' ' -f1)
             
             # 写入Packages
             echo "$control" >> Packages
@@ -62,12 +64,16 @@ jobs:
           done
           
           gzip -k -f Packages
+          
+          # 统计包数量
+          pkg_count=$(grep -c '^Package:' Packages 2>/dev/null || echo "0")
+          
           echo ""
           echo "========================================"
           echo "Packages 索引生成完成"
-          echo "成功: $count 个包"
-          echo "跳过: $skipped 个包"
+          echo "包数量: $pkg_count 个"
           echo "========================================"
+          set -e
 
       - name: 提交更新
         run: |
