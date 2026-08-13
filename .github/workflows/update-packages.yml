@@ -1,0 +1,43 @@
+name: 更新 Packages 索引
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'debs/**'
+      - '.github/workflows/update-packages.yml'
+  workflow_dispatch:
+
+jobs:
+  update-packages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 安装 dpkg-dev
+        run: sudo apt-get update && sudo apt-get install -y dpkg-dev
+
+      - name: 生成 Packages 索引
+        run: |
+          cd debs
+          dpkg-scanpackages . /dev/null > ../Packages
+          cd ..
+          gzip -k -f Packages
+          echo "Packages 索引已生成"
+          echo "包数量: $(grep -c '^Package:' Packages)"
+
+      - name: 提交更新
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Packages Packages.gz
+          if git diff --cached --quiet; then
+            echo "索引无变化，跳过提交"
+          else
+            git commit -m "自动更新 Packages 索引"
+            git push
+            echo "索引已更新并推送"
+          fi
